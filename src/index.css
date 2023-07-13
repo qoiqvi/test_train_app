@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	margin: 0;
+	padding: 100;
+	box-sizing: border-box;
+	font-family: "Nunito", sans-serif;
+	letter-spacing: 0, 7px;
+	text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+	all: unset;
+}
+
+.navbar {
+	width: 100%;
+	align-items: center;
+	display: flex;
+	height: 50px;
+	background-color: #e20338;
+	margin-bottom: 10px;
+}
+
+.navbar h1 {
+	margin-left: 15px;
+}
+
+.container {
+	width: 1170px;
+	margin: auto;
+	padding: 0px 15px;
+}
+
+table {
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+	border-collapse: collapse;
+	margin: 10px auto;
+	width: 100%;
+}
+
+table th,
+table td {
+	align-items: center;
+	padding: 10px;
+}
+
+.mt_10 {
+	margin-top: 10px;
+}
+
+table td:not(:last-child) {
+	border-right: 1px solid rgb(114, 114, 114);
+}
+
+table th {
+	background: #ff4136;
+}
+
+table tr:nth-child(even) {
+	background-color: #eaeaea;
+}
+
+table tr {
+	transition: all 0.3s;
+}
+
+table tr:hover {
+	background-color: #ccc;
+}
+
+.btn {
+	display: block;
+	margin: 30px auto;
+	padding: 10px 20px;
+	background-color: #d52b1e;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+	background-color: #ff4136;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.header {
+	margin-left: 35px;
 }
